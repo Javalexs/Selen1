@@ -17,7 +17,7 @@ public class GitHubTest {
         Selenide.open("https://github.com/");
         Configuration.holdBrowserOpen = true;
 
-        //Открыть страницу Selenide в Github
+        //Открыть страницу Selenide в Github.com
         $("[type=text]").setValue("selenide").pressEnter();
         $$("ul.repo-list li").first().$("a").click();
 
